@@ -1,0 +1,22 @@
+{application, pyfleet,
+ [
+  {description, ""},
+  {vsn, "0.1"},
+  {registered, []},
+  {included_applications, [
+  ]},
+  {applications, [
+                  kernel,
+                  stdlib,
+		  inets,
+		  crypto,
+	          mochiweb,
+                  webmachine,
+                  sync
+                 ]},
+  {mod, { pyfleet_app, []}},
+  {env, [
+    {web_ip, "0.0.0.0"},
+    {web_port, 8080}
+  ]}
+ ]}.
